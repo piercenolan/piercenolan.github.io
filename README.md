@@ -55,10 +55,6 @@ I am Nolan Pierce, a junior at Stanford University studying Computer Science. Th
 
 ## How to Run Locally
 
-To view this website on your local machine:
-
-## How to run locally
-
 This website consists of static HTML, CSS, and JavaScript files. To view it locally, simply open the `index.html` file in your web browser.
 
 ---
