@@ -3327,3 +3327,30 @@ input, select, textarea {
 			}
 
 		}
+		/* Screenshot grid */
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+
+.screenshot-grid img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.screenshot-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Video container */
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    display: block;
+}
