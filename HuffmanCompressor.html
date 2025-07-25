@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Nolan Pierce - Computer Science Portfolio</title>
+		<title>Warehouse Wreckage | Nolan Pierce Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,6 +22,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
+									<span class="title">Nolan Pierce</span>
 								</a>
 
 							<!-- Nav -->
@@ -46,47 +47,30 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<header>
-								<h1>Nolan Pierce | Computer Science @ Stanford University</h1>
-								<p>Explore my work in game development and general programming!</p>
-							</header>
-							<section class="tiles">
-								<!-- Video Game Projects -->
-								<article class="style6">
-									<span class="image">
-										<img src="images/Warehouse Wreckage/Thumbnail.png" alt="" /></span>
-									<a href="WarehouseWreckage.html">
-										<h2>Warehouse Wreckage</h2>
-										<div class="content">
-											<p>physics-based shooter</p>
-										</div>
-									</a>
-								</article>
+							<h1>Heap Allocator (CS107 Final Assignment)</h1>
+							<p>	As part of Stanford’s CS107 “Computer Organizations and Systems” course, I implemented two heap allocator designs in C:
+							<ul>
+								<li>An <strong>implicit free‐list allocator</strong> (unstable list weaving through heap blocks).</li>
+								<li>An <strong>explicit free‐list allocator</strong> using a doubly-linked free block list with coalescing for improved efficiency.</li>
+							</ul>
+							</p>
 
-								<!-- General Programming Projects -->
-								<article class="style3">
-									<span class="image">
-										<img src="images/Heap Allocator Tile.jpg" alt="" /></span>
-									<a href="HeapAllocator.html">
-										<h2>Heap Allocator</h2>
-										<div class="content">
-											<p>C-based malloc/realloc/free implementation</p>
-										</div>
-									</a>
-								</article>
+							<p>
+							The project reinforced my skills in pointer manipulation, debugging, profiling with Valgrind, and designing data structures under low-level constraints. It was evaluated using a <code>test_harness</code> framework that exercised my implementations across simulated allocation workloads
+							</p>
 
-								<article class="style3">
-									<span class="image">
-										<img src="images/Huffman Compressor.png" alt="" /></span>
-									<a href="HuffmanCompressor.html">
-										<h2>Huffman Compressor</h2>
-										<div class="content">
-											<p>C-based malloc/realloc/free implementation</p>
-										</div>
-									</a>
-								</article>
-								
-							</section>
+							<p>
+							Key implementation highlights:
+							<ul>
+							<li>Accurate handling of dynamic calls: <code>malloc</code>, <code>free</code>, and <code>realloc</code>.</li>
+							<li>Block headers with size and allocation status using least significant bits per spec.</li>
+							<li>Efficient memory reuse via explicit free‑list, enabling O(1) coalescing on free.</li>
+							<li>Profiling and performance tuning using Valgrind and callgrind.</li>
+							</ul>
+							</p>
+
+<p><em>Note: All source code is restricted by academic policy. Code is available upon request.</em></p>
+
 						</div>
 					</div>
 

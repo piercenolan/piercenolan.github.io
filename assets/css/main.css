@@ -3354,3 +3354,13 @@ input, select, textarea {
     border-radius: 10px;
     display: block;
 }
+
+/* Holds Tile Size */
+.tiles .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tiles article .image {
+  height: 250px; /* Or any height you want */
+}
