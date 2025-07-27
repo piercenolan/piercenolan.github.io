@@ -47,30 +47,25 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Heap Allocator (CS107 Final Assignment)</h1>
-							<p>	As part of Stanford’s CS107 “Computer Organizations and Systems” course, I implemented two heap allocator designs in C:
-							<ul>
-								<li>An <strong>implicit free‐list allocator</strong> (unstable list weaving through heap blocks).</li>
-								<li>An <strong>explicit free‐list allocator</strong> using a doubly-linked free block list with coalescing for improved efficiency.</li>
-							</ul>
-							</p>
+							<h1>Huffman Compressor (CS106B Final Assignment)</h1>
 
 							<p>
-							The project reinforced my skills in pointer manipulation, debugging, profiling with Valgrind, and designing data structures under low-level constraints. It was evaluated using a <code>test_harness</code> framework that exercised my implementations across simulated allocation workloads
+							As part of Stanford University’s CS106B course on programming abstractions, I implemented a file compression and decompression tool using the standard Huffman coding algorithm. This project required me to build a program capable of encoding and decoding arbitrary files efficiently with lossless compression.
 							</p>
+
+							<p>This assignment enabled me to demonstrate proficiency in:</p>
+							<ul>
+							<li>Counting character frequencies using a hash map data structure.</li>
+							<li>Constructing a binary tree (encoding tree) via a priority queue, and merging nodes based on ascending frequency.</li>
+							<li>Generating an encoding map from the tree (prefix codes), and producing a compressed data output.</li>
+							<li>Implementing a decoding function to reconstruct input from compressed bitstreams consistently and accurately.</li>
+							</ul>
 
 							<p>
-							Key implementation highlights:
-							<ul>
-							<li>Accurate handling of dynamic calls: <code>malloc</code>, <code>free</code>, and <code>realloc</code>.</li>
-							<li>Block headers with size and allocation status using least significant bits per spec.</li>
-							<li>Efficient memory reuse via explicit free‑list, enabling O(1) coalescing on free.</li>
-							<li>Profiling and performance tuning using Valgrind and callgrind.</li>
-							</ul>
+							All logic is implemented in C++, using the Stanford C++ library where applicable. The project includes rigorous testing via a provided `huffmanmain.cpp`, ensuring correct functionality across multiple encoding and decoding scenarios. Memory safety and correctness were checked via debugging and manual tests
 							</p>
 
-<p><em>Note: All source code is restricted by academic policy. Code is available upon request.</em></p>
-
+							<p><em>Note: Source code is restricted per academic policy. Code is available upon request only.</em></p>
 						</div>
 					</div>
 
