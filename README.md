@@ -78,6 +78,7 @@ You can reach me via email or connect with me on professional networks:
 ## Credits
 
 - Website design by [HTML5 UP](https://html5up.net) under the Creative Commons Attribution 3.0 License.
+- Website development aided by ChatGPT
 
 ---
 
