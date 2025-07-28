@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Huffman Compressor | Nolan Pierce Portfolio</title>
+		<title>Outfit Picker | Nolan Pierce Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -47,25 +47,46 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Huffman Compressor (CS106B Final Assignment)</h1>
+							<h1>Outfit Picker</h1>
+							<p><strong>Status:</strong> In Progress</p>
 
 							<p>
-							As part of Stanford University’s CS106B course on programming abstractions, I implemented a file compression and decompression tool using the standard Huffman coding algorithm. This project required me to build a program capable of encoding and decoding arbitrary files efficiently with lossless compression.
+							This C++-based outfit picker is designed for individuals with busy schedules who want a streamlined approach to choosing clothes. The goal is to automate wardrobe management while still respecting personal style, recent usage, and (eventually) external factors like weather or profession.
 							</p>
 
-							<p>This assignment enabled me to demonstrate proficiency in:</p>
+							<h2>Current Features</h2>
 							<ul>
-							<li>Counting character frequencies using a hash map data structure.</li>
-							<li>Constructing a binary tree (encoding tree) via a priority queue, and merging nodes based on ascending frequency.</li>
-							<li>Generating an encoding map from the tree (prefix codes), and producing a compressed data output.</li>
-							<li>Implementing a decoding function to reconstruct input from compressed bitstreams consistently and accurately.</li>
+								<li>Users can input clothing items with attributes including:
+									<ul>
+										<li><code>type</code> (e.g., jacket, pants, shoes)</li>
+										<li><code>isLong</code> (long-sleeved or pants)</li>
+										<li><code>material</code></li>
+										<li><code>color</code></li>
+										<li><code>pattern</code></li>
+									</ul>
+								</li>
+								<li>Prompts the user to add or remove clothing items.</li>
+								<li>All data is saved in a <code>.csv</code> file for persistence between sessions.</li>
+								<li>After an outfit is generated, worn items are moved to a separate <code>worn.csv</code> file.</li>
+								<li>Users are asked if laundry has been done to return items to the available pool.</li>
 							</ul>
 
-							<p>
-							All logic is implemented in C++, using the Stanford C++ library where applicable. The project includes rigorous testing via a provided `huffmanmain.cpp`, ensuring correct functionality across multiple encoding and decoding scenarios. Memory safety and correctness were checked via debugging and manual tests
-							</p>
+							<h2>Planned Extensions</h2>
+							<ul>
+								<li>Integrate real-time weather APIs to recommend season-appropriate outfits.</li>
+								<li>Use user-defined career types (e.g., business, creative, trades) to guide outfit formalness or style.</li>
+								<li>Build a web or mobile interface for more accessible daily use.</li>
+								<li>Enhance outfit selection algorithm based on past usage, aesthetic matching, and constraints.</li>
+							</ul>
 
-							<p><em>Note: Source code is restricted per academic policy. Code is available upon request only.</em></p>
+							<h2>Technologies Used</h2>
+							<ul>
+								<li>C++ (OOP, file I/O)</li>
+								<li>CSV-based lightweight database</li>
+								<li>Future: Weather APIs, Web frontend frameworks (e.g., React or Flutter)</li>
+							</ul>
+
+							<p><em>This project is actively under development. You can view the source code and follow its progress on <a href="https://github.com/piercenolan/outfit-picker" target="_blank">GitHub</a>.</em></p>
 						</div>
 					</div>
 
