@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+  Phantom by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Obstacle Assault | Nolan Pierce Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- Local page tweaks (keeps spacing tight & media responsive) -->
+    <style>
+      /* Keep headings tight to content for recruiter-friendly skimming */
+      h1 { margin-bottom: 0.5rem; }
+      .subheader { margin-top: 0.25rem; margin-bottom: 1.25rem; color: #666; font-size: 1.05rem; }
+
+      h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+      ul { margin-top: 0.25rem; margin-bottom: 1.25rem; }
+
+      /* Media layout */
+      .project-media { display: grid; gap: 1.25rem; }
+      .screenshot-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+      }
+      .screenshot-grid img {
+        width: 100%;
+        height: 220px;           /* unified tile height */
+        object-fit: cover;       /* uniform crop for mixed aspect ratios */
+        border-radius: 6px;
+      }
+      @media (max-width: 980px) {
+        .screenshot-grid { grid-template-columns: repeat(2, 1fr); }
+        .screenshot-grid img { height: 200px; }
+      }
+      @media (max-width: 640px) {
+        .screenshot-grid { grid-template-columns: 1fr; }
+        .screenshot-grid img { height: 200px; }
+      }
+
+      /* Responsive YouTube embed that matches tile width */
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;  /* 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      .video-container iframe {
+        position: absolute; top: 0; left: 0;
+        width: 100%; height: 100%;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+          <header id="header">
+            <div class="inner">
+
+              <!-- Logo -->
+                <a href="index.html" class="logo">
+                  <span class="title">Nolan Pierce</span>
+                </a>
+
+              <!-- Nav -->
+                <nav>
+                  <ul>
+                    <li><a href="#menu">Menu</a></li>
+                  </ul>
+                </nav>
+
+            </div>
+          </header>
+
+        <!-- Menu -->
+          <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="bio.html">About Me</a></li>
+            </ul>
+          </nav>
+
+        <!-- Main -->
+          <div id="main">
+            <div class="inner">
+              <h1>Obstacle Assault</h1>
+              <p class="subheader"><strong>Status: In Progress · Unreal Engine 5 (Blueprints + C++)</strong></p>
+
+              <p>
+                <em>Obstacle Assault</em> is a 3D platformer built as part of GameDev.tv’s Unreal Engine 5 C++ curriculum. 
+                I’m using this project to sharpen core gameplay engineering skills: character movement, collision handling, moving/rotating platforms, and polished level flow. 
+                While the early implementation is in Blueprints, I’m incrementally translating logic into C++ to mirror production workflows.
+              </p>
+
+              <h3>What This Demonstrates</h3>
+              <ul>
+                <li><strong>Gameplay Programming:</strong> character control, movement tuning, jump arcs, and fail/respawn logic.</li>
+                <li><strong>Interactive World:</strong> spline/rotator-driven platforms, timed obstacles, and checkpointing.</li>
+                <li><strong>UE5 Fundamentals:</strong> actors/components, Tick usage, delta time, events, collisions, and traces.</li>
+                <li><strong>Blueprint ⇄ C++:</strong> prototyping in Blueprints, then porting systems to C++ for maintainability and performance.</li>
+              </ul>
+
+              <h3>Current Features</h3>
+              <ul>
+                <li>Moving/rotating platforms with configurable speed/paths.</li>
+                <li>Collision volumes for hazards and reset points.</li>
+                <li>Start/finish flow with restart-on-fall behavior.</li>
+                <li>Work-in-progress: level timing + best-time tracking.</li>
+              </ul>
+
+              <div class="project-media">
+                <!-- Screenshot Grid -->
+                <div class="screenshot-grid">
+                  <!-- Replace the src paths with your real images -->
+                  <img src="images/Obstacle Assault/oa_start.png" alt="Starting area with initial platforming section">
+                  <img src="images/Obstacle Assault/oa_rotators.png" alt="Rotating platforms challenge">
+                  <img src="images/Obstacle Assault/oa_finish.png" alt="Finish platform and view of level">
+                </div>
+
+                <!-- Gameplay Video -->
+                <div class="video-container">
+                  <!-- Replace the embed link with your unlisted YouTube embed URL -->
+                  <iframe 
+                    src="https://www.youtube.com/embed/XXXXXXXXXXX" 
+                    title="Obstacle Assault - Gameplay (Work in Progress)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+
+              <h3>Tech & Tools</h3>
+              <ul>
+                <li><strong>Engine:</strong> Unreal Engine 5</li>
+                <li><strong>Programming:</strong> Blueprints, C++ (actors, components, input)</li>
+                <li><strong>Systems:</strong> movement, collision, transforms, timers, Tick/delta time</li>
+                <li><strong>Workflow:</strong> rapid prototyping in Blueprints → targeted C++ refactors</li>
+              </ul>
+
+              <p><em>Note:</em> This project uses course/free assets. I’m sharing screenshots and gameplay footage, but not distributing asset files.</p>
+            </div>
+          </div>
+
+        <!-- Footer -->
+          <footer id="footer">
+            <div class="inner">
+              <section>
+                <section>
+                  <h2>Get in Touch</h2>
+                  <p>You can reach me directly via email or connect with me on LinkedIn!</p>
+                  <ul>
+                    <li>Email: <a href="mailto:63npierce@gmail.com">63npierce@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/piercenolan/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/piercenolan" target="_blank">GitHub</a></li>
+                  </ul>
+                </section>
+              </section>
+              <ul class="copyright">
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+              </ul>
+            </div>
+          </footer>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
